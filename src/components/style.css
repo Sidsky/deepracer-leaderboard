@@ -15,6 +15,7 @@
     justify-content: center;
     /*align-items: center;*/
     height: 100vh;
+    /*float: left;*/
 }
 
 .board {
@@ -50,7 +51,8 @@
 }
 
 #profile{
-     /*display: flex;*/
+    display: flex;
+    float: left;
     margin-top: 3em;
 }
 
@@ -82,12 +84,14 @@
 
 .image{
     height: 200px;
-    width: 50%;
 }
 
 .numbers {
-    float: left;
-    width:  100px;
+    /*float: left;*/
+    width:  50px;
     /*height: 100px;*/
-    object-fit: cover;
+    /*object-fit: cover;*/
+}
+.stratify {
+    columns: 3 auto;
 }

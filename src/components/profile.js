@@ -1,4 +1,5 @@
 import React from "react";
+import { Box } from "@mui/material";
 
 function importAll(r) {
     let images = {};
@@ -18,25 +19,44 @@ export default function Profiles({Leaderboard}){
 
 function Item(data){
     return(
-        <>
+        <div className="stratify">
             {
                 data.map((value, index) => (
-                    <div className="flex" key={index}>
-                        <div className="item">
-                            <img src={value.img} alt="" />
-                            {/*<img src={require('./images/1.png')} alt="" />*/}
-                            <img src={images[`${index+1}.png`]} className="numbers" alt=""/>>
-                            <div className="info">
-                                <h3 className="name text-dark">{value.name}</h3>
-                                <span>{value.location}</span>
-                            </div>
-                        </div>
-                        <div className="item">
+                    <Box
+                        display="flex"
+                        flexDirection="row"
+                        justifyContent="left"
+                        marginBottom="10px"
+                        height="75px"
+                    >
+                        <Box
+                            display="flex"
+                            flexDirection="column"
+                            width="20%"
+                        >
+                            <img src={images[`${index+1}.png`]} className="numbers" alt=""/>
+                        </Box>
+                        <Box
+                            display="flex"
+                            flexDirection="column"
+                            width="60%"
+                            // alignItems="left"
+                        >
+                            <h3 className="name text-dark">{value.name}</h3>
+                            <span>{value.location}</span>
+                        </Box>
+                        <Box
+                            display="flex"
+                            flexDirection="column"
+                            width="20%"
+                            paddingRight="20px"
+                        >
                             <span>{value.score}</span>
-                        </div>
-                    </div>
+                        </Box>
+
+                    </Box>
                 ))
             }
-        </>
+        </div>
     )
 }
