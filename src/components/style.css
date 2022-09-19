@@ -50,8 +50,7 @@
 }
 
 #profile{
-    /* display: flex; */
-
+     /*display: flex;*/
     margin-top: 3em;
 }
 
@@ -84,4 +83,11 @@
 .image{
     height: 200px;
     width: 50%;
+}
+
+.numbers {
+    float: left;
+    width:  100px;
+    /*height: 100px;*/
+    object-fit: cover;
 }
