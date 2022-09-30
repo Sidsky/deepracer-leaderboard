@@ -7,7 +7,7 @@ export const Leaderboard = [
     {
         name: "TIMCLG",
         location: "Hong Kong",
-        score : "03:00:000",
+        score : "0:00:000",
     },
     {
         name: "Rapidator",
@@ -17,12 +17,12 @@ export const Leaderboard = [
     {
         name: "Data-Digger",
         location: "Hong Kong",
-        score : "03:00:000",
+        score : "00:01:000",
     },
     {
         name: "SpeedRider",
         location: "Hong Kong",
-        score : "03:00:000",
+        score : "00:00:001",
     },
     {
         name: "DaRT-Force",

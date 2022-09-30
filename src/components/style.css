@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,9,121,1) 35%, rgba(162,0,255,0.5998774509803921) 100%)
+}
+
 * > * {
     font-family: "Poppins", cursive;
     margin: 0;
@@ -83,7 +87,7 @@
 }
 
 .image{
-    height: 200px;
+    height: 250px;
 }
 
 .numbers {
@@ -92,6 +96,7 @@
     /*height: 100px;*/
     /*object-fit: cover;*/
 }
+
 .stratify {
     columns: 3 auto;
 }
